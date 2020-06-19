@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Alerta</title>
+    </head>
+    <body>
+        <div id="app ">
+            <button onmouseover="mostraAlerta()">ALERTA</button>
+            <div class="box"></div>    
+        </div>
+        
+        <script>
+            function getRandomColor() {
+                   var letters = "0123456789ABCDEF";
+                   var color = "#";
+                   for (var i = 0; i < 6; i++) {
+                      color += letters[Math.floor(Math.random() * 16)];
+                    }
+                  return color;
+                }      
+             
+            function mostraAlerta() {
+                var cor = getRandomColor();       
+                var boxElement = document.querySelector('.box');
+                boxElement.style.width = 100;
+                boxElement.style.height = 100;
+                boxElement.style.backgroundColor = cor;
+            }
+        </script>
+    </body>
+</html>

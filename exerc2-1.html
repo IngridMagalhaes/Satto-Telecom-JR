@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Alerta</title>
+    </head>
+    <body>
+        <div id="app ">
+            <button onclick="mostraAlerta()">ALERTA</button>
+            <div class="box"></div>    
+        </div>
+        
+        <script>
+             
+            function mostraAlerta() {
+             
+                var boxElement = document.querySelector('.box');
+                boxElement.style.width = 100;
+                boxElement.style.height = 100;
+                boxElement.style.backgroundColor = '#f00';
+            }
+        </script>
+    </body>
+</html>

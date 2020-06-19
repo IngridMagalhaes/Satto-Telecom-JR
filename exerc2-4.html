@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h2>Lista de Nomes</h2>
+        <h3>Nome: </h3>
+        <input type="text" id="name" />
+        <button onclick="adicionar()">Adicionar nome</button>
+        <br>
+        <ul id="lista">
+      
+         </ul>
+    </head>
+    <body>
+        <script>
+            function adicionar() {
+  var ing = document.getElementById("name").value;
+  var lista  = document.getElementById("lista").innerHTML;
+  lista = lista +"<li>"+ing+"</li>";
+  
+  document.getElementById("lista").innerHTML = lista;
+}
+
+        </script>
+    </body>
+</html>

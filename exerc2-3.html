@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Lista</title>
+    </head>
+    <body>
+        <p id="list"></p>
+        <div class="nomes">
+            <ul id="listagem"></ul>
+        </div>
+        <script>
+            function user(user1,user2,user3){
+                this.user1 = user1;
+                this.user2 = user2;
+                this.user3 = user3;
+            }
+
+            var nome = new user("Diego","Gabriel","Lucas");
+            
+            var lista = document.getElementById('listagem');
+            
+            var User1 = document.createElement('li');
+            var User2 = document.createElement('li');
+            var User3 = document.createElement('li');
+
+            User1.innerHTML = nome.user1;
+            User2.innerHTML = nome.user2;
+            User3.innerHTML = nome.user3;
+
+            lista.appendChild(User1);
+            lista.appendChild(User2);
+            lista.appendChild(User3);
+
+        </script>
+    </body>
+</html>
